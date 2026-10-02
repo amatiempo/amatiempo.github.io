@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ykP2+dxZ3SoNA2NT3/+gPNW1aeemw/FcZ1FC5/eXlCM='; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <title>AM: app di promemoria per Android, bollette e scadenze</title>
+  <meta name="description" content="Promemoria per bollette, scadenze, compleanni e appuntamenti che suonano come una sveglia e ti dicono cosa preparare. Gratis e senza pubblicità.">
+  <link rel="canonical" href="https://amatiempo.github.io/it/">
+  <link rel="alternate" hreflang="es" href="https://amatiempo.github.io/">
+  <link rel="alternate" hreflang="pt" href="https://amatiempo.github.io/pt/">
+  <link rel="alternate" hreflang="it" href="https://amatiempo.github.io/it/">
+  <link rel="alternate" hreflang="en" href="https://amatiempo.github.io/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://amatiempo.github.io/zh/">
+  <link rel="alternate" hreflang="ru" href="https://amatiempo.github.io/ru/">
+  <link rel="alternate" hreflang="de" href="https://amatiempo.github.io/de/">
+  <link rel="alternate" hreflang="x-default" href="https://amatiempo.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AM">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="es_AR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:title" content="AM: app di promemoria per Android, bollette e scadenze">
+  <meta property="og:description" content="Promemoria per bollette, scadenze, compleanni e appuntamenti che suonano come una sveglia e ti dicono cosa preparare. Gratis e senza pubblicità.">
+  <meta property="og:url" content="https://amatiempo.github.io/it/">
+  <meta property="og:image" content="https://amatiempo.github.io/og-1.4.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo di AM, l’etichetta «Novità · Versione 1.4» e il testo: Meno pensieri per la testa.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AM: app di promemoria per Android, bollette e scadenze">
+  <meta name="twitter:description" content="Promemoria per bollette, scadenze, compleanni e appuntamenti che suonano come una sveglia e ti dicono cosa preparare. Gratis e senza pubblicità.">
+  <meta name="twitter:image" content="https://amatiempo.github.io/og-1.4.png">
+  <meta name="twitter:image:alt" content="Logo di AM, l’etichetta «Novità · Versione 1.4» e il testo: Meno pensieri per la testa.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"AM","url":"https://amatiempo.github.io/it/","image":"https://amatiempo.github.io/og-1.4.png","description":"Promemoria per bollette, scadenze, compleanni e appuntamenti che suonano come una sveglia e ti dicono cosa preparare. Gratis e senza pubblicità.","operatingSystem":"Android","applicationCategory":"ProductivityApplication","softwareVersion":"1.4","inLanguage":["es","en","pt-BR"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"it","mainEntity":[{"@type":"Question","name":"Cosa posso ricordare con AM?","acceptedAnswer":{"@type":"Answer","text":"Compleanni, pagamenti, appuntamenti, documenti in scadenza, viaggi, esami, medicine e qualsiasi cosa con una data: ci sono 29 categorie. Ciò che non ha data finisce in «Per dopo»."}},{"@type":"Question","name":"Quanto costa?","acceptedAnswer":{"@type":"Answer","text":"Niente. AM è gratis: senza abbonamenti, senza pubblicità e senza acquisti in app."}},{"@type":"Question","name":"Su quali dispositivi è disponibile?","acceptedAnswer":{"@type":"Answer","text":"Su Android. Non è ancora negli store: la stiamo provando con alcune persone e, se vuoi partecipare, scrivici. L’idea è arrivare su Google Play e sull’App Store; su iPhone non funziona ancora."}},{"@type":"Question","name":"Può suonare come una sveglia?","acceptedAnswer":{"@type":"Answer","text":"Sì, dalla 1.4. Suona con la suoneria della sveglia del telefono finché non tocchi «Stop», anche con AM chiusa, e tace da sola dopo un minuto. La usi per ciò che vuoi, oppure passi tutto a «Solo sveglie»."}},{"@type":"Question","name":"Devo creare un account?","acceptedAnswer":{"@type":"Answer","text":"No. È facoltativo: serve per avere una copia nel cloud e usare AM su più di un telefono."}},{"@type":"Question","name":"Dove vengono salvati i miei promemoria?","acceptedAnswer":{"@type":"Answer","text":"Senza account, sul telefono. Con account, anche su Firebase (Google), e ogni account vede solo i propri. Le foto restano sempre sul telefono."}},{"@type":"Question","name":"Funziona senza internet?","acceptedAnswer":{"@type":"Answer","text":"Sì: annotare, vedere la lista e ricevere avvisi funziona senza connessione. Sincronizzare l’account richiede internet, e la dettatura potrebbe richiederlo a seconda del telefono."}},{"@type":"Question","name":"E se un avviso non arriva?","acceptedAnswer":{"@type":"Answer","text":"Alcune marche limitano le app per risparmiare batteria. «Stato degli avvisi» controlla cosa può bloccare un avviso, ti guida con «Configura con me» e lo prova da capo a fondo. Se qualcosa blocca gli avvisi, la schermata iniziale te lo mostra in una scheda rossa."}},{"@type":"Question","name":"In che lingua è l’app?","acceptedAnswer":{"@type":"Answer","text":"In spagnolo, inglese e portoghese del Brasile. La scegli nel benvenuto o nelle Impostazioni, oppure lasci che segua la lingua del telefono. Ciò che scrivi non viene tradotto."}},{"@type":"Question","name":"Cosa fa con le mie foto, i contatti e il calendario?","acceptedAnswer":{"@type":"Answer","text":"Li usa solo quando usi quella funzione. Le foto vengono lette sul telefono e il calendario non viene mai modificato."}},{"@type":"Question","name":"Posso recuperare i miei dati se cambio telefono?","acceptedAnswer":{"@type":"Answer","text":"Sì: accedi con il tuo account oppure importi un backup (quello manuale o quello automatico settimanale). Le foto non vengono trasferite."}},{"@type":"Question","name":"Come elimino il mio account?","acceptedAnswer":{"@type":"Answer","text":"Dall’app, in Impostazioni › Account › Elimina account. Se non hai più l’app, in Elimina il tuo account ti spieghiamo come chiederlo."}},{"@type":"Question","name":"La demo di questa pagina mi invierà avvisi?","acceptedAnswer":{"@type":"Answer","text":"No. La demo non programma avvisi e non salva niente: ciò che scrivi resta nel tuo browser e si cancella ricaricando la pagina. Chiede il microfono solo se vuoi dettare."}}]}</script>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/icono-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>
+    // Antes de pintar: el tema elegido y, en una página en español, la vuelta al idioma que la persona eligió antes.
+    // Cualquier cambio acá cambia su hash en la CSP: lo calcula solo scripts/paginas.ts.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('am.tema');
+        if (t === 'dark' || t === 'light') d.dataset.theme = t;
+        var i = localStorage.getItem('am.idioma');
+        if (d.lang === 'es-AR' && !d.hasAttribute('data-sin-vuelta') && /^(pt|it|en|zh|ru|de)$/.test(i)) location.replace('/' + i + location.pathname + location.search + location.hash);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="module" crossorigin src="/assets/comun-CxwP4vkL.js"></script>
+  <script type="module" crossorigin src="/assets/main-DhcxwDrw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/comun-BYvOwXht.css">
+</head>
+<body>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Íconos de Lucide (ISC). Trazo fino y redondeado, como los de la app. -->
+      <symbol id="i-regalo" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+      <symbol id="i-tarjeta" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+      <symbol id="i-turno" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+      <symbol id="i-documento" viewBox="0 0 24 24"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></symbol>
+      <symbol id="i-corazon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-personas" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-marcador" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+      <symbol id="i-lapiz" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></symbol>
+      <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-campana" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+      <symbol id="i-campana-sonando" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M22 8c0-2.3-.8-4.3-2-6"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/><path d="M4 2C2.8 3.7 2 5.7 2 8"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-mas" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+      <symbol id="i-casa" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+      <symbol id="i-calendario" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></symbol>
+      <symbol id="i-semana" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></symbol>
+      <symbol id="i-calendario-ok" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+      <symbol id="i-ajustes" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+      <symbol id="i-flecha" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-flecha-der" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+      <symbol id="i-repetir" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-escanear" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/></symbol>
+      <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-sube" viewBox="0 0 24 24"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></symbol>
+      <symbol id="i-microfono" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+      <symbol id="i-lista" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+      <symbol id="i-salir" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+      <symbol id="i-alarma" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></symbol>
+      <symbol id="i-botones" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-pausa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 15V9"/><path d="M14 15V9"/></symbol>
+      <symbol id="i-rayo" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+      <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+      <symbol id="i-paleta" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/></symbol>
+      <symbol id="i-candado" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-guion" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+      <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+      <symbol id="i-luna" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-buscar" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-idiomas" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+      <symbol id="i-capas" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+      <symbol id="i-etiqueta" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+      <symbol id="i-externo" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-correo" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-mensaje" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-brillo" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+      <symbol id="i-alerta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+      <symbol id="i-volumen" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+      <symbol id="i-historial" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+      <symbol id="i-engranaje" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-avion" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+      <symbol id="i-auto" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+      <symbol id="i-pastilla" viewBox="0 0 24 24"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></symbol>
+      <symbol id="i-bolsa" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="i-libro" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+      <symbol id="i-ubicacion" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <!-- Marcas de las tiendas (Simple Icons, CC0). Solo identifican dónde va a estar AM. -->
+      <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></symbol>
+      <!-- Banderas (dibujos simples, para el selector de idioma). -->
+      <symbol id="f-es" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#74ACDF"/><rect y="6.67" width="30" height="6.67" fill="#FFFFFF"/><circle cx="15" cy="10" r="2.3" fill="#F6B40E"/></symbol>
+      <symbol id="f-pt" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#009C3B"/><path d="M15 2.4 27.6 10 15 17.6 2.4 10z" fill="#FFDF00"/><circle cx="15" cy="10" r="4.3" fill="#002776"/></symbol>
+      <symbol id="f-it" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#FFFFFF"/><rect x="20" width="10" height="20" fill="#CE2B37"/></symbol>
+      <symbol id="f-en" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="corte-gb"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0 0 30" stroke="#FFFFFF" stroke-width="6" stroke-linecap="butt"/><path d="M0 0l60 30M60 0 0 30" clip-path="url(#corte-gb)" stroke="#C8102E" stroke-width="4" stroke-linecap="butt"/><path d="M30 0v30M0 15h60" stroke="#FFFFFF" stroke-width="10" stroke-linecap="butt"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6" stroke-linecap="butt"/></symbol>
+      <symbol id="f-zh" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#DE2910"/><path fill="#FFDE00" d="M5 2.6l.95 2.9h3.05l-2.47 1.8.94 2.9L5 8.4l-2.47 1.8.94-2.9L1 5.5h3.05z"/><circle cx="10" cy="2" r=".8" fill="#FFDE00"/><circle cx="12" cy="4" r=".8" fill="#FFDE00"/><circle cx="12" cy="7" r=".8" fill="#FFDE00"/><circle cx="10" cy="9" r=".8" fill="#FFDE00"/></symbol>
+      <symbol id="f-ru" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#FFFFFF"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/></symbol>
+      <symbol id="f-de" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="6.67" fill="#000000"/><rect y="6.67" width="30" height="6.67" fill="#DD0000"/><rect y="13.33" width="30" height="6.67" fill="#FFCE00"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="saltar" href="#contenido">Vai al contenuto</a>
+  <div class="centinela" aria-hidden="true"></div>
+
+  <header class="barra" data-barra>
+    <nav class="contenedor barra-nav" aria-label="Principale">
+      <a class="barra-logo" href="./#inicio">
+        <picture>
+          <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="42px">
+          <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="42px">
+          <img src="/am-logo.png" alt="AM, vai alla pagina iniziale" width="42" height="24">
+        </picture>
+      </a>
+      <ul class="barra-links">
+        <li><a href="./#novedades">Novità</a></li>
+        <li><a href="./#demo">Demo</a></li>
+        <li><a href="./#privacidad">Privacy</a></li>
+        <li><a href="./#preguntas">Domande</a></li>
+      </ul>
+      <div class="barra-herramientas">
+        <div class="idioma">
+          <button type="button" class="control" popovertarget="menu-idioma" aria-haspopup="menu" aria-expanded="false" aria-label="Lingua: Italiano" data-idioma-boton>
+            <span class="bandera" aria-hidden="true"><svg><use href="#f-it"/></svg></span>
+            <span class="control-codigo">IT</span>
+            <svg class="control-flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+          </button>
+          <ul class="menu" id="menu-idioma" role="menu" popover aria-label="Lingua">
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/" hreflang="es" lang="es-AR" data-lang="es"><span class="bandera" aria-hidden="true"><svg><use href="#f-es"/></svg></span>Español</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/pt/" hreflang="pt" lang="pt-BR" data-lang="pt"><span class="bandera" aria-hidden="true"><svg><use href="#f-pt"/></svg></span>Português</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="true" href="/it/" hreflang="it" lang="it" data-lang="it"><span class="bandera" aria-hidden="true"><svg><use href="#f-it"/></svg></span>Italiano</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/en/" hreflang="en" lang="en" data-lang="en"><span class="bandera" aria-hidden="true"><svg><use href="#f-en"/></svg></span>English</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh"><span class="bandera" aria-hidden="true"><svg><use href="#f-zh"/></svg></span>中文</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/ru/" hreflang="ru" lang="ru" data-lang="ru"><span class="bandera" aria-hidden="true"><svg><use href="#f-ru"/></svg></span>Русский</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/de/" hreflang="de" lang="de" data-lang="de"><span class="bandera" aria-hidden="true"><svg><use href="#f-de"/></svg></span>Deutsch</a></li>
+          </ul>
+        </div>
+        <button type="button" class="control control--icono" data-tema aria-label="Passa alla modalità scura">
+          <svg class="icono-luna" aria-hidden="true"><use href="#i-luna"/></svg>
+          <svg class="icono-sol" aria-hidden="true"><use href="#i-sol"/></svg>
+        </button>
+        <a class="boton boton--primario boton--chico" href="./#empezar"><span class="cta-largo">Voglio provare AM</span><span class="cta-corto">Prova AM</span></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="contenedor hero-texto">
+        <p class="hero-marca entrar"><a class="pastilla" href="#novedades">Novità · Versione 1.4</a><span>AM · Promemoria</span></p>
+        <h1 class="hero-titulo" id="hero-titulo">Meno pensieri<br> <span class='azul'>per la testa<span class='punto'>.</span></span></h1>
+        <p class="hero-bajada entrar">Ricorda ciò che conta, prepara ciò che arriva e assicurati che l’avviso arrivi. Pagamenti, compleanni, appuntamenti e scadenze, gratis e senza pubblicità.</p>
+        <div class="hero-acciones entrar">
+          <a class="boton boton--primario boton--grande" href="#empezar">Voglio provare AM</a>
+          <a class="enlace-flecha" href="#demo"><span>Prova la demo</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        </div>
+        <p class="aviso-idioma entrar">L’app AM è disponibile in spagnolo, inglese e portoghese.</p>
+      </div>
+
+      <figure class="hero-visual" data-hero-visual>
+        <div class="recorte">
+          <div class="telefono" role="img" aria-label="Illustrazione della schermata iniziale di AM (in inglese): il saluto con il tuo nome, cosa hai oggi, i pagamenti del mese, la tua settimana, pagare internet oggi e comprare il regalo per la mamma.">
+            <div class="pantalla" aria-hidden="true" lang="en" data-lang-app>
+              <div class="app-cab">
+                <picture>
+                  <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="35px">
+                  <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="35px">
+                  <img src="/am-logo.png" alt="" width="35" height="20" decoding="async">
+                </picture>
+                <span class="app-botones"><span class="app-buscar"><svg><use href="#i-buscar"/></svg></span><span class="app-mas"><svg><use href="#i-mas"/></svg></span></span>
+              </div>
+              <p class="app-fecha" data-hoy>Today</p>
+              <p class="app-saludo"><span data-saludo>Good morning</span>, Juli</p>
+              <p class="app-resumen">1 to sort out · 1 to prepare</p>
+              <p class="app-pagos"><span data-mes-pagos>This month’s payments:</span> <b>$45,300</b> to pay · <span class='app-ver'>See ›</span></p>
+              <div class="app-semana">
+                <svg><use href="#i-semana"/></svg>
+                <span><b>Your week</b><span>3 things · 1 birthday · 2 payments ($25,500)</span></span>
+                <svg class="app-chevron"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="app-seccion">To sort out</p>
+              <ul class="app-lista">
+                <li class="nota nota--a">
+                  <span class="app-check"></span>
+                  <span class="nota-cuerpo">
+                    <span class="nota-titulo">Pay the internet bill</span>
+                    <span class="nota-meta"><svg><use href="#i-tarjeta"/></svg><span>Due today · Payment</span></span>
+                  </span>
+                </li>
+              </ul>
+              <p class="app-seccion">Get ready today</p>
+              <ul class="app-lista">
+                <li class="nota nota--b">
+                  <span class="app-check app-check--paso"></span>
+                  <span class="nota-cuerpo">
+                    <span class="nota-titulo">Buy a gift</span>
+                    <span class="nota-meta"><svg><use href="#i-lista"/></svg><span>Mom’s birthday · 5 days left</span></span>
+                  </span>
+                </li>
+              </ul>
+              <div class="app-pestanas">
+                <span class="activa"><svg><use href="#i-casa"/></svg><span>Home</span></span>
+                <span><svg><use href="#i-calendario"/></svg><span>Calendar</span></span>
+                <span><svg><use href="#i-capas"/></svg><span>Spaces</span></span>
+                <span><svg><use href="#i-engranaje"/></svg><span>Settings</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="chip chip--1" aria-hidden="true"><span class="chip-icono"><svg><use href="#i-alarma"/></svg></span><span>Una sveglia vera</span></div>
+          <div class="chip chip--2" aria-hidden="true"><span class="chip-icono chip-icono--ok"><svg><use href="#i-check"/></svg></span><span>Tutto pronto per avvisarti</span></div>
+          <div class="chip chip--3" aria-hidden="true"><span class="chip-icono"><svg><use href="#i-salir"/></svg></span><span>Esci ora · 10:05</span></div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="seccion seccion--blanca preparar" id="producto" aria-labelledby="preparar-titulo">
+      <div class="contenedor preparar-grid" id="preparar">
+        <div class="preparar-texto revelar">
+          <p class="ceja">Preparazione</p>
+          <h2 class="titulo-seccion" id="preparar-titulo">Non solo ricordare.<br> Arrivare preparati.</h2>
+          <p class="bajada">Un compleanno inizia prima degli auguri. Un appuntamento, prima di uscire. AM ti aiuta a tenere a mente questi passi.</p>
+          <p class="preparar-nota">Nelle occasioni che si ripetono, la preparazione ricomincia ogni volta.</p>
+        </div>
+
+        <fieldset class="ejemplos revelar d1">
+          <legend class="solo-lector">Scegli un esempio di occasione</legend>
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-cumple" checked>
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-turno">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-pago">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-documento">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-medico">
+          <div class="selector">
+            <label for="ej-cumple">Compleanno</label>
+            <label for="ej-turno">Appuntamento</label>
+            <label for="ej-pago">Pagamento</label>
+            <label for="ej-documento">Documento</label>
+            <label for="ej-medico">Medico</label>
+          </div>
+
+          <div class="ejemplos-marco">
+            <div class="linea" data-ejemplo="cumple" role="img" aria-label="Compleanno della mamma, con due preparativi. Una settimana prima: comprare il regalo, già fatto. Un giorno prima: preparare cosa portare. Il giorno: il compleanno.">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-regalo"/></svg>
+                <div><b>Compleanno della mamma</b><span>Ogni anno · 1 di 2 preparativi pronti</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito hito--listo"><span class="hito-marca"><svg><use href="#i-check"/></svg></span><span class="hito-cuando">Una settimana prima</span><span class="hito-titulo">Comprare il regalo</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Un giorno prima</span><span class="hito-titulo">Preparare cosa portare</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">Il giorno</span><span class="hito-titulo">Compleanno della mamma</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="turno" role="img" aria-label="Appuntamento dalla dentista alle 10:30, con due preparativi. Un giorno prima: preparare documenti ed esami. Un’ora prima: uscire in anticipo. Il giorno: l’appuntamento.">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-turno"/></svg>
+                <div><b>Appuntamento dalla dentista</b><span>Alle 10:30 · 0 di 2 preparativi pronti</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Un giorno prima</span><span class="hito-titulo">Preparare documenti ed esami</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Un’ora prima</span><span class="hito-titulo">Uscire in anticipo</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">Il giorno, 10:30</span><span class="hito-titulo">Appuntamento dalla dentista</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="pago" role="img" aria-label="Pagare la carta il 10 di ogni mese, con un preparativo. Tre giorni prima: controllare importo e metodo di pagamento. Il giorno: pagare la carta.">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-tarjeta"/></svg>
+                <div><b>Pagare la carta</b><span>Il 10 di ogni mese · 1 preparativo in sospeso</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Tre giorni prima</span><span class="hito-titulo">Controllare importo e metodo di pagamento</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">Il giorno</span><span class="hito-titulo">Pagare la carta</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="documento" role="img" aria-label="La carta d’identità scade il 15 gennaio. Avvisi due mesi, un mese e una settimana prima, e il giorno della scadenza. Per rinnovare: carta d’identità attuale e appuntamento online.">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-documento"/></svg>
+                <div><b>Scade la carta d’identità</b><span>15 gennaio · Documento</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Due mesi prima</span><span class="hito-titulo">Avviso</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Un mese prima</span><span class="hito-titulo">Avviso</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">Una settimana prima</span><span class="hito-titulo">Avviso</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">Il giorno</span><span class="hito-titulo">Scade la carta d’identità</span></li>
+              </ol>
+              <div class="linea-lista" aria-hidden="true">
+                <p>Per rinnovare</p>
+                <ul><li><span class="mini-check"></span><span>Carta d’identità attuale</span></li><li><span class="mini-check"></span><span>Appuntamento online</span></li></ul>
+              </div>
+            </div>
+            <div class="linea" data-ejemplo="medico" role="img" aria-label="Visita medica alle 10:30 in studio, a 25 minuti. Alle 10:05: esci ora per arrivare alle 10:30. Da portare: caricabatterie, documento ed esami; il documento è già spuntato e il caricabatterie l’ultima volta è rimasto senza spunta.">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-turno"/></svg>
+                <div><b>Visita medica</b><span>Alle 10:30 · Studio (25 min)</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito hito--salir"><span class="hito-marca"><svg><use href="#i-salir"/></svg></span><span class="hito-cuando">10:05</span><span class="hito-titulo">Esci ora per arrivare alle 10:30</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">10:30</span><span class="hito-titulo">Visita medica</span></li>
+              </ol>
+              <div class="linea-lista" aria-hidden="true">
+                <p>Da portare · 1 di 3 spuntati</p>
+                <ul>
+                  <li><span class="mini-check"></span><span>Caricabatterie</span> <small>(l’ultima volta è rimasto senza spunta)</small></li>
+                  <li class="tildado"><span class="mini-check"><svg><use href="#i-check"/></svg></span><span>Documento</span></li>
+                  <li><span class="mini-check"></span><span>Esami</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="seccion novedades" id="novedades" aria-labelledby="novedades-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja ceja--naranja">Novità</p>
+          <h2 class="titulo-seccion titulo-seccion--xl" id="novedades-titulo">Le novità della<br> <span class='azul'>versione 1.4<span class='punto'>.</span></span></h2>
+          <p class="bajada">Sveglie vere, tre modi di avvisarti, tre lingue e un benvenuto che prepara tutto. Arriva insieme ai dieci miglioramenti della 1.3: quindici novità in tutto.</p>
+        </div>
+
+        <ul class="destacados">
+          <li class="destacado destacado--grande revelar">
+            <span class="etiqueta-destacado">In evidenza</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-alarma"/></svg></span>
+            <h3>Una sveglia vera</h3>
+            <p>Suona con la suoneria della sveglia del telefono finché non tocchi «Stop», anche con AM chiusa e lo schermo spento. Se non rispondi, tace dopo un minuto e resta in sospeso. «Posticipa» la fa suonare di nuovo dopo 10 minuti, senza aprire l’app.</p>
+            <p class="ejemplo"><span class="ejemplo-alarma" aria-hidden="true"><svg><use href="#i-alarma"/></svg></span><span><span class='solo-lector'>Esempio: </span><b>Pagare la carta di credito</b> <span>Sta suonando · Stop · Posticipa</span></span></p>
+          </li>
+          <li class="destacado destacado--grande revelar d1">
+            <span class="etiqueta-destacado">In evidenza</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-ajustes"/></svg></span>
+            <h3>Scegli tu come ti avvisa</h3>
+            <p>Classico: ogni promemoria usa ciò che gli hai scelto. Solo notifiche. Oppure solo sveglie, perché non ti sfugga niente: prima di attivarlo, AM ti dice quante sveglie suonerebbero nei prossimi 7 giorni.</p>
+            <div class="ejemplo ejemplo--columna">
+              <span class="segmentado" aria-hidden="true"><span>Classico</span><span>Notifiche</span><span class="activo">Sveglie</span></span>
+              <span><span class='solo-lector'>Esempio: </span>Con «Solo sveglie», <b>suonerebbero 4 sveglie</b> nei prossimi 7 giorni.</span>
+            </div>
+          </li>
+          <li class="destacado revelar">
+            <span class="etiqueta-destacado">In evidenza</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-idiomas"/></svg></span>
+            <h3>Nella tua lingua</h3>
+            <p>Spagnolo, inglese o portoghese del Brasile, oppure la lingua del telefono. E capisce ciò che scrivi o detti in tutte e tre.</p>
+            <p class="ejemplo ejemplo--frases"><span class="solo-lector">Per esempio, capisce la stessa cosa in queste tre frasi:</span><span lang="es">Mañana a las 9</span><span lang="en">Tomorrow at 9</span><span lang="pt-BR">Amanhã às 9</span></p>
+          </li>
+          <li class="destacado revelar d1">
+            <span class="etiqueta-destacado">In evidenza</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-brillo"/></svg></span>
+            <h3>Un benvenuto che prepara tutto</h3>
+            <p>Sette passi brevi: il tuo nome, come vuoi essere avvisato, i permessi necessari (con «Configura con me»), i tuoi contatti e il calendario se vuoi, e l’aspetto. Se lo chiudi, riprende da dove eri rimasto. E un tour di sei passi ti mostra come usarla.</p>
+            <div class="ejemplo ejemplo--columna"><span class="progreso" aria-hidden="true"><i></i></span><span>Passo 3 di 7 · Preparare gli avvisi</span></div>
+          </li>
+          <li class="destacado revelar d2">
+            <span class="etiqueta-destacado">In evidenza</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escudo"/></svg></span>
+            <h3>Se qualcosa non va, te lo dice</h3>
+            <p>Se qualcosa blocca gli avvisi, la schermata iniziale te lo mostra in una scheda rossa e ti aiuta a sistemarlo. «Prova la sveglia» suona davvero e ti chiede se l’hai sentita: AM non dà per scontato ciò che non può verificare.</p>
+            <p class="ejemplo ejemplo--alerta"><span class="ejemplo-alerta" aria-hidden="true"><svg><use href="#i-alerta"/></svg></span><span><span class='solo-lector'>Esempio: </span><b>Le sveglie non possono suonare</b> <span>Configura ora</span></span></p>
+          </li>
+        </ul>
+
+        <h3 class="novedades-subtitulo revelar">E tutto quello della 1.3</h3>
+        <ul class="novedades-lista">
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-capas"/></svg></span><div><h4>Spazi</h4><p>Una nuova scheda riunisce Persone, Pagamenti, Documenti e Luoghi, ognuno con il suo stato: «3 compleanni · il prossimo sab 10 ott».</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-etiqueta"/></svg></span><div><h4>29 categorie, con ricerca</h4><p>Viaggio, Esame, Animali, Veicolo, Farmaci e altre. Cerchi «bolletta» e appare Pagamento; «volo», Viaggio.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lista"/></svg></span><div><h4>Idee per arrivare preparato</h4><p>A seconda dell’occasione, AM ti propone fino a tre passi, come comprare il regalo o controllare le prenotazioni. Si aggiungono solo se li tocchi.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-marcador"/></svg></span><div><h4>Preparazioni salvate</h4><p>Salvi i passi di un’occasione e li riusi con un tocco, senza ripetere quelli che ci sono già.</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-reloj"/></svg></span><div><h4>L’ora esatta</h4><p>Scrivi 07:17 e resta 07:17. Niente orologi con le lancette né arrotondamenti.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-calendario"/></svg></span><div><h4>Prima di cambiare una data</h4><p>Vedi come si sposta ogni preparazione prima di salvare, e dopo puoi annullare.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lapiz"/></svg></span><div><h4>Bozze che non si perdono</h4><p>Se chiudi l’app a metà, ciò che stavi scrivendo ti aspetta.</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-volumen"/></svg></span><div><h4>Suoni e vibrazione</h4><p>Ogni tipo di avviso con il suo stato in Android e un pulsante per provarlo.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-engranaje"/></svg></span><div><h4>Impostazioni più chiare</h4><p>Ordinate per gruppi, con lo stato di ogni cosa in vista.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-personas"/></svg></span><div><h4>Contatti e calendario, sistemati</h4><p>I compleanni dei tuoi contatti e gli eventi del calendario ora vengono letti correttamente, con il solo permesso di lettura.</p></div></li>
+        </ul>
+
+        <div class="novedades-acciones revelar">
+          <a class="boton boton--primario boton--grande" href="#empezar">Voglio provare AM</a>
+          <a class="enlace-flecha" href="novedades.html"><span>Vedi tutte le versioni</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca funciones" id="funciones" aria-labelledby="funciones-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja">Tutto quello che fa</p>
+          <h2 class="titulo-seccion" id="funciones-titulo">Il solito<br> c’è ancora.</h2>
+          <p class="bajada">Le novità si aggiungono a tutto questo, che resta com’era.</p>
+        </div>
+
+        <ul class="destacados">
+          <li class="destacado destacado--grande revelar">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escanear"/></svg></span>
+            <h3>Foto → promemoria</h3>
+            <p>Scatta una foto a una bolletta, a un appuntamento stampato o a un documento, e AM legge titolo, data, ora e importo. La foto viene letta sul telefono: tu controlli e salvi.</p>
+            <p class="ejemplo"><span class="ejemplo-miniatura" aria-hidden="true"><svg><use href="#i-escanear"/></svg></span><span><span class='solo-lector'>Esempio: </span><b>Pagare Edesur S.A.</b> <span>Scade il 15/10 · $ 25.300,50 · con la foto come ricevuta</span></span></p>
+          </li>
+          <li class="destacado destacado--grande revelar d1">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escudo"/></svg></span>
+            <h3>Stato degli avvisi</h3>
+            <p>Controlla sul tuo telefono tutto ciò che può bloccare un avviso (permesso, categorie disattivate, risparmio batteria, pausa) e ti guida per risolverlo. Fa una prova completa e ti dice quando è arrivato l’ultimo avviso.</p>
+            <p class="ejemplo"><span class="ejemplo-ok" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span><span class='solo-lector'>Esempio: </span><b>Tutto pronto per avvisarti</b> <span>Permesso · Categorie · Batteria · Nessuna pausa</span></span></p>
+          </li>
+          <li class="destacado revelar">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-sube"/></svg></span>
+            <h3>Pagamenti sul serio</h3>
+            <p>Quanto hai pagato davvero ogni volta, anche se l’importo cambia. L’andamento di ogni servizio, i prossimi 3 mesi, «Copia alias / CBU» e la ricevuta con foto.</p>
+            <p class="ejemplo"><span class="barras" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span><span class='solo-lector'>Esempio: </span><b>La luce è aumentata del 18% da agosto</b></span></p>
+          </li>
+          <li class="destacado revelar d1">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-regalo"/></svg></span>
+            <h3>Persone e regali</h3>
+            <p>Per ogni compleanno o anniversario annoti idee regalo durante l’anno e cosa hai regalato. Puoi importare i compleanni dai tuoi contatti.</p>
+            <p class="ejemplo"><span><span class='solo-lector'>Esempio di avviso: </span><b>Compleanno di Ana · Domani</b> <span>Idee: libro · L’anno scorso: profumo ($ 18.000)</span></span></p>
+          </li>
+          <li class="destacado revelar d2">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-documento"/></svg></span>
+            <h3>Documenti e scadenze</h3>
+            <p>Carta d’identità, passaporto, patente, revisione, assicurazione o garanzie, con avviso 2 mesi, 1 mese e 1 settimana prima, la lista «Per rinnovare» e la foto del documento a portata di mano.</p>
+            <p class="ejemplo"><span><span class='solo-lector'>Esempio: </span><b>Patente di guida</b> <span class='naranja-texto'>Scade tra 21 giorni · Mar 20 ott</span></span></p>
+          </li>
+        </ul>
+
+        <ul class="novedades-lista novedades-lista--funciones">
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-microfono"/></svg></span><div><h4>Dettatura vocale</h4><p>Tocchi il microfono e dici «domani alle 10 appuntamento dal dentista» (in spagnolo).</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lista"/></svg></span><div><h4>Liste da portare</h4><p>Si spuntano ogni volta e si salvano per riusarle: viaggio, medico, palestra. E ti segnala cosa è rimasto senza spunta l’ultima volta.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-salir"/></svg></span><div><h4>«Esci ora»</h4><p>Salvi quanto ci metti per arrivare in ogni posto e AM ti avvisa quando uscire, con «Come arrivare». Non usa la tua posizione.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-semana"/></svg></span><div><h4>La tua settimana</h4><p>Un avviso settimanale con ciò che arriva (impegni, pagamenti, compleanni e cosa preparare) e uno sguardo al mese successivo.</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-calendario-ok"/></svg></span><div><h4>Eventi del tuo calendario</h4><p>Importa appuntamenti e riunioni dal tuo calendario, anche da Google Calendar, e ti suggerisce cosa preparare. Solo lettura: non modifica mai il tuo calendario.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-campana-sonando"/></svg></span><div><h4>«Devo risolverlo»</h4><p>Insiste ogni 15 minuti, 1 ora o 3 ore, rispetta le tue ore di riposo e avvisa al massimo 3 volte al giorno.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-reloj"/></svg></span><div><h4>Più avvisi in anticipo</h4><p>10 minuti, 1 ora, 1 giorno, 1 settimana, 1 mese o 2 mesi prima. E rimandare non sposta la scadenza.</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-botones"/></svg></span><div><h4>Pulsanti nell’avviso</h4><p>«Fatto», «10 min» e «1 ora» funzionano senza aprire l’app.</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-pausa"/></svg></span><div><h4>Metti in pausa gli avvisi</h4><p>Per le vacanze: al rientro ti arriva un riepilogo. Ci sono anche il riepilogo del giorno e un suono diverso per categoria.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-repetir"/></svg></span><div><h4>Ripetizioni come nella vita reale</h4><p>Ogni 2 settimane; lunedì, mercoledì e venerdì; il secondo martedì; l’ultimo venerdì; l’ultimo giorno lavorativo; oppure «ripeti 3 mesi dopo il completamento».</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-rayo"/></svg></span><div><h4>Annota al volo</h4><p>Un pulsante fisso nella barra delle notifiche, scorciatoie sull’icona (Nuovo · Per dopo · Da una foto), condivisione da un’altra app e il widget «Oggi».</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-telefono"/></svg></span><div><h4>Azioni dirette</h4><p>Chiamare, aprire il pagamento, vedere l’indirizzo, WhatsApp e condividere un promemoria.</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-paleta"/></svg></span><div><h4>A modo tuo</h4><p>Ti saluta per nome. 6 colori, sfondo caldo o neutro, modalità chiara, scura o automatica, e la settimana inizia di lunedì o di domenica.</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-candado"/></svg></span><div><h4>I tuoi dati, al sicuro</h4><p>Account facoltativo con sincronizzazione, backup con anteprima e «Annulla», backup automatico settimanale, impronta o PIN per aprire AM e «Annulla» ovunque.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion demo" id="demo" aria-labelledby="demo-titulo" data-demo>
+      <div class="contenedor demo-grid">
+        <div class="demo-texto revelar">
+          <p class="ceja">Provala</p>
+          <h2 class="titulo-seccion" id="demo-titulo">Togliti un pensiero dalla testa.</h2>
+          <p class="bajada">Scrivilo o dettalo, come lo diresti.</p>
+        </div>
+
+        <div class="demo-panel">
+          <form class="demo-form" data-form method="dialog" novalidate>
+            <fieldset class="demo-campos" data-campos disabled>
+              <label class="demo-etiqueta" for="demo-campo">Cosa vuoi ricordare?</label>
+              <div class="demo-fila-campo">
+                <div class="demo-campo-caja">
+                  <input class="demo-campo" id="demo-campo" data-campo type="text" placeholder="Tomorrow 9:30 dentist" lang="en" data-lang-app maxlength="120"
+                    autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="done" aria-describedby="demo-entiende demo-error demo-aclaracion">
+                  <!-- Dictado: el código lo muestra solo si el navegador sabe convertir voz en texto. -->
+                  <button type="button" class="boton-voz" data-dictar aria-pressed="false" aria-label="Detta" hidden><svg aria-hidden="true"><use href="#i-microfono"/></svg></button>
+                </div>
+                <button type="submit" class="boton boton--primario">Crea promemoria</button>
+              </div>
+              <p class="demo-voz" data-voz hidden></p>
+              <p class="demo-entiende" id="demo-entiende" data-entiende></p>
+              <p class="demo-error" id="demo-error" data-error></p>
+              <div class="sugerencias">
+                <span class="sugerencias-titulo" id="sugerencias-titulo">Prova con</span>
+                <div class="sugerencias-lista" role="group" aria-labelledby="sugerencias-titulo" lang="en" data-lang-app>
+                  <button type="button" class="sugerencia" data-sugerencia>Tomorrow 9:30 dentist</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Pay the credit card on the 10th of every month</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Ana’s birthday November 14</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Passport expires January 15</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Flight to Chicago Friday 7 am</button>
+                </div>
+              </div>
+              <p class="aclaracion" id="demo-aclaracion"><svg aria-hidden="true"><use href="#i-info"/></svg><span><span>È una dimostrazione. Non programma avvisi.</span> <span>L’app è in spagnolo, inglese e portoghese: questa demo usa l’inglese.</span></span></p>
+            </fieldset>
+          </form>
+
+          <p class="demo-vacio" data-vacio>La demo ha bisogno di JavaScript. Se scrivi «Tomorrow 9:30 dentist», AM lo salva come appuntamento per domani alle 9:30.</p>
+          <div class="demo-resultado" data-resultado hidden>
+            <div class="demo-cab">
+              <h3 class="demo-cab-titulo">La tua lista</h3>
+              <button type="button" class="boton-texto" data-reiniciar>Ricomincia la demo</button>
+            </div>
+            <ul class="demo-lista" data-lista aria-label="Promemoria di prova"></ul>
+            <p class="demo-tope" data-tope hidden>La demo mostra gli ultimi 4. Nell’app non c’è limite.</p>
+            <div class="demo-aviso" data-aviso hidden>
+              <p data-aviso-texto></p>
+              <button type="button" data-deshacer>Annulla</button>
+            </div>
+          </div>
+          <p class="solo-lector" role="status" data-anuncio></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca pasos" id="como-funciona" aria-labelledby="pasos-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja">Come funziona</p>
+          <h2 class="titulo-seccion" id="pasos-titulo">Tre passi.<br> E vai avanti con la tua giornata.</h2>
+        </div>
+        <ol class="pasos-lista">
+          <li class="paso revelar">
+            <span class="paso-numero" aria-hidden="true">1</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-lapiz"/></svg></span>
+            <h3 class="paso-titulo">Annotalo</h3><p>Scrivendo, dettando o con una foto.</p>
+          </li>
+          <li class="paso revelar d1">
+            <span class="paso-numero" aria-hidden="true">2</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-lista"/></svg></span>
+            <h3 class="paso-titulo">AM ti prepara</h3><p>Cosa preparare, cosa portare, quando uscire e quanto pagare.</p>
+          </li>
+          <li class="paso revelar d2">
+            <span class="paso-numero" aria-hidden="true">3</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-campana"/></svg></span>
+            <h3 class="paso-titulo">Ti avvisa in tempo</h3><p>Con una notifica o con una sveglia. Lo completi o lo rimandi dall’avviso stesso.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion comparar" id="comparar" aria-labelledby="comparar-titulo">
+      <div class="contenedor comparar-grid">
+        <div class="revelar">
+          <p class="ceja">Confronto</p>
+          <h2 class="titulo-seccion" id="comparar-titulo">Più di<br> un’agenda.</h2>
+          <p class="bajada">Tutte e due ti avvisano in tempo. Il resto lo fa AM.</p>
+        </div>
+        <div class="tabla-marco revelar d1">
+          <table class="tabla">
+            <caption class="solo-lector">Cosa fa un’agenda comune e cosa fa AM</caption>
+            <thead>
+              <tr><th scope="col"><span class="solo-lector">Cosa fa</span></th><th scope="col">Agenda comune</th><th scope="col">AM</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Avvisa in tempo</th><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Suona come una sveglia finché non la fermi</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Ti dice cosa preparare e quando</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Insiste senza disturbarti di notte</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Rimanda senza perdere la scadenza</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Quanto hai pagato e quanto pagherai</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Idee regalo e cosa hai regalato</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Documenti con avviso a 60, 30 e 7 giorni</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Ti avvisa quando uscire senza tracciarti</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Controlla che i tuoi avvisi arrivino</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+              <tr><th scope="row">Foto → promemoria</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>No</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sì</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca privacidad" id="privacidad" aria-labelledby="privacidad-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <span class="privacidad-icono" aria-hidden="true"><svg><use href="#i-candado"/></svg></span>
+          <h2 class="titulo-seccion" id="privacidad-titulo">Le tue cose sono tue.</h2>
+          <p class="bajada">Senza account, i tuoi promemoria restano sul telefono. Se accedi con un account, si sincronizzano con Firebase (Google) e li vedi solo tu. Le tue foto non lasciano mai il telefono e vengono lette lì. Calendario e contatti vengono letti solo se usi quelle funzioni, e AM non li modifica mai.</p>
+        </div>
+        <ul class="garantias revelar d1">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Account facoltativo</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Senza account, tutto sul telefono</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Gratis e senza abbonamenti</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Niente pubblicità né posizione</span></li>
+        </ul>
+        <p class="privacidad-nota revelar d2">Quello che scrivi nella demo viene elaborato nel tuo browser e non viene inviato a nessun server. Se detti, il browser trasforma la tua voce in testo e può farlo sui server della sua azienda (Google, Microsoft o Apple). Niente cookie di tracciamento né analisi. <a href='privacidad.html'>Altro sulla privacy</a></p>
+      </div>
+    </section>
+
+    <section class="seccion preguntas" id="preguntas" aria-labelledby="preguntas-titulo">
+      <div class="contenedor preguntas-grid">
+        <div class="revelar">
+          <p class="ceja">Domande</p>
+          <h2 class="titulo-seccion" id="preguntas-titulo">Le domande più frequenti.</h2>
+        </div>
+        <div class="faq revelar d1">
+          <details><summary><span>Cosa posso ricordare con AM?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Compleanni, pagamenti, appuntamenti, documenti in scadenza, viaggi, esami, medicine e qualsiasi cosa con una data: ci sono 29 categorie. Ciò che non ha data finisce in «Per dopo».</p></div></details>
+          <details><summary><span>Quanto costa?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Niente. AM è gratis: senza abbonamenti, senza pubblicità e senza acquisti in app.</p></div></details>
+          <details><summary><span>Su quali dispositivi è disponibile?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Su Android. Non è ancora negli store: la stiamo provando con alcune persone e, se vuoi partecipare, scrivici. L’idea è arrivare su Google Play e sull’App Store; su iPhone non funziona ancora.</p></div></details>
+          <details><summary><span>Può suonare come una sveglia?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Sì, dalla 1.4. Suona con la suoneria della sveglia del telefono finché non tocchi «Stop», anche con AM chiusa, e tace da sola dopo un minuto. La usi per ciò che vuoi, oppure passi tutto a «Solo sveglie».</p></div></details>
+          <details><summary><span>Devo creare un account?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>No. È facoltativo: serve per avere una copia nel cloud e usare AM su più di un telefono.</p></div></details>
+          <details><summary><span>Dove vengono salvati i miei promemoria?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Senza account, sul telefono. Con account, anche su Firebase (Google), e ogni account vede solo i propri. Le foto restano sempre sul telefono.</p></div></details>
+          <details><summary><span>Funziona senza internet?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Sì: annotare, vedere la lista e ricevere avvisi funziona senza connessione. Sincronizzare l’account richiede internet, e la dettatura potrebbe richiederlo a seconda del telefono.</p></div></details>
+          <details><summary><span>E se un avviso non arriva?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Alcune marche limitano le app per risparmiare batteria. «Stato degli avvisi» controlla cosa può bloccare un avviso, ti guida con «Configura con me» e lo prova da capo a fondo. Se qualcosa blocca gli avvisi, la schermata iniziale te lo mostra in una scheda rossa.</p></div></details>
+          <details><summary><span>In che lingua è l’app?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>In spagnolo, inglese e portoghese del Brasile. La scegli nel benvenuto o nelle Impostazioni, oppure lasci che segua la lingua del telefono. Ciò che scrivi non viene tradotto.</p></div></details>
+          <details><summary><span>Cosa fa con le mie foto, i contatti e il calendario?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Li usa solo quando usi quella funzione. Le foto vengono lette sul telefono e il calendario non viene mai modificato.</p></div></details>
+          <details><summary><span>Posso recuperare i miei dati se cambio telefono?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Sì: accedi con il tuo account oppure importi un backup (quello manuale o quello automatico settimanale). Le foto non vengono trasferite.</p></div></details>
+          <details><summary><span>Come elimino il mio account?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>Dall’app, in Impostazioni › Account › Elimina account. Se non hai più l’app, in <a href='eliminar-cuenta.html'>Elimina il tuo account</a> ti spieghiamo come chiederlo.</p></div></details>
+          <details><summary><span>La demo di questa pagina mi invierà avvisi?</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>No. La demo non programma avvisi e non salva niente: ciò che scrivi resta nel tuo browser e si cancella ricaricando la pagina. Chiede il microfono solo se vuoi dettare.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cierre" id="empezar" aria-labelledby="cierre-titulo">
+      <div class="contenedor cierre-contenido">
+        <h2 class="cierre-titulo revelar" id="cierre-titulo">Lascialo ad AM.<br> <span class='claro'>Vai avanti con la tua giornata<span class='punto'>.</span></span></h2>
+        <p class="cierre-estado revelar d1"><strong>Stiamo preparando il lancio.</strong> Nel frattempo la stiamo provando su Android con alcune persone. L’idea è arrivare su <span class="marca-tienda"><svg aria-hidden="true"><use href="#i-play"/></svg>Google Play</span> e sull’<span class="marca-tienda"><svg aria-hidden="true"><use href="#i-apple"/></svg>App Store</span>.</p>
+        <div class="cierre-botones revelar d2">
+          <a class="boton boton--blanco boton--grande" href="https://ig.me/m/amatiempo" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-mensaje"/></svg><span>Voglio provare AM</span><span class="solo-lector">(si apre in un’altra scheda)</span><svg class="externo" aria-hidden="true"><use href="#i-externo"/></svg></a>
+          <a class="boton boton--borde boton--grande" href="mailto:amapp.contacto@gmail.com?subject=AM"><svg aria-hidden="true"><use href="#i-correo"/></svg><span>Scrivici per email</span></a>
+          <a class="enlace-flecha enlace-flecha--claro" href="https://www.instagram.com/amatiempo/" target="_blank" rel="noopener"><svg class="enlace-icono" aria-hidden="true"><use href="#i-instagram"/></svg><span>Segui il lancio</span><span class="solo-lector">(si apre in un’altra scheda)</span><svg aria-hidden="true"><use href="#i-externo"/></svg></a>
+        </div>
+        <p class="cierre-ig revelar d3">Scrivi un messaggio diretto a @amatiempo su Instagram o un’email a amapp.contacto@gmail.com, e ti diciamo come partecipare al test.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-grid">
+      <div class="pie-marca">
+        <picture>
+          <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="56px">
+          <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="56px">
+          <img src="/am-logo.png" alt="AM" width="56" height="32" loading="lazy" decoding="async">
+        </picture>
+        <p>Ciò che conta, pronto e puntuale.</p>
+      </div>
+      <nav aria-label="Piè di pagina">
+        <ul class="pie-links">
+          <li><a href="novedades.html">Novità</a></li>
+          <li><a href="./#demo">Prova la demo</a></li>
+          <li><a href="./#preguntas">Domande</a></li>
+          <li><a href="privacidad.html">Privacy</a></li>
+          <li><a href="terminos.html">Termini</a></li>
+          <li><a href="eliminar-cuenta.html">Elimina il tuo account</a></li>
+          <li><a href="https://www.instagram.com/amatiempo/" target="_blank" rel="noopener">Instagram<svg class="externo" aria-hidden="true"><use href="#i-externo"/></svg><span class="solo-lector">(si apre in un’altra scheda)</span></a></li>
+          <li><a href="mailto:amapp.contacto@gmail.com">amapp.contacto@gmail.com</a></li>
+        </ul>
+      </nav>
+      <p class="pie-legal"><span>Fatto in Argentina, in modo indipendente.</span> <span class="sin-corte">© 2026 AM</span></p>
+    </div>
+  </footer>
+
+<script type="application/json" id="textos">{"ui.temaOscuro":"Passa alla modalità scura","ui.temaClaro":"Passa alla modalità chiara","demo.vacio":"Quello che annoti comparirà qui.","demo.seAnota":"Viene salvato come","demo.completar":"Completa","demo.marcarPendiente":"Segna come da fare","demo.completado":"Completato","demo.anotado":"Salvato.","demo.anotadoAnuncio":"Salvato:","demo.menos":"Un pensiero in meno per la testa.","demo.pendiente":"È di nuovo da fare.","demo.deshecho":"Fatto, annullato.","demo.vaciada":"La demo è vuota.","demo.error":"Scrivi qualcosa da ricordare, per esempio «Tomorrow 9:30 dentist».","demo.fechaRara":"Non ho capito la data «{fecha}». L’ho salvato per dopo.","demo.fechaRaraRevisar":"Non ho capito la data «{fecha}». Controlla il giorno.","demo.escuchando":"Ti ascolto… Dillo in inglese, come lo diresti.","demo.sinVoz":"Non ho sentito niente. Tocca il microfono e riprova.","demo.micBloqueado":"Il browser non ha il permesso di usare il microfono. Consentilo nelle impostazioni del sito e riprova.","demo.vozDesactivada":"La dettatura è disattivata su questo dispositivo o browser.","demo.sinMic":"Non abbiamo trovato un microfono.","demo.vozSinRed":"Per dettare, il tuo browser ha bisogno di una connessione a internet.","demo.vozFallo":"Questo browser non è riuscito a trasformare la tua voce in testo. Prova con Chrome, Edge o Safari, oppure scrivilo.","demo.vozNoDisponible":"Per provare la dettatura, apri questa pagina in Chrome, Edge o Safari."}</script>
+</body>
+</html>

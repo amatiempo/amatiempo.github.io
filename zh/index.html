@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ykP2+dxZ3SoNA2NT3/+gPNW1aeemw/FcZ1FC5/eXlCM='; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+  <title>AM：安卓提醒应用，账单和到期日不再忘</title>
+  <meta name="description" content="账单、到期日、生日和预约的提醒，像闹钟一样响起，还会告诉你要准备什么。免费、无广告，适用于安卓。">
+  <link rel="canonical" href="https://amatiempo.github.io/zh/">
+  <link rel="alternate" hreflang="es" href="https://amatiempo.github.io/">
+  <link rel="alternate" hreflang="pt" href="https://amatiempo.github.io/pt/">
+  <link rel="alternate" hreflang="it" href="https://amatiempo.github.io/it/">
+  <link rel="alternate" hreflang="en" href="https://amatiempo.github.io/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://amatiempo.github.io/zh/">
+  <link rel="alternate" hreflang="ru" href="https://amatiempo.github.io/ru/">
+  <link rel="alternate" hreflang="de" href="https://amatiempo.github.io/de/">
+  <link rel="alternate" hreflang="x-default" href="https://amatiempo.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AM">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="es_AR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:title" content="AM：安卓提醒应用，账单和到期日不再忘">
+  <meta property="og:description" content="账单、到期日、生日和预约的提醒，像闹钟一样响起，还会告诉你要准备什么。免费、无广告，适用于安卓。">
+  <meta property="og:url" content="https://amatiempo.github.io/zh/">
+  <meta property="og:image" content="https://amatiempo.github.io/og-1.4.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AM 的标志、“新 · 版本 1.4”标签和文字：少些琐事挂在心上。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AM：安卓提醒应用，账单和到期日不再忘">
+  <meta name="twitter:description" content="账单、到期日、生日和预约的提醒，像闹钟一样响起，还会告诉你要准备什么。免费、无广告，适用于安卓。">
+  <meta name="twitter:image" content="https://amatiempo.github.io/og-1.4.png">
+  <meta name="twitter:image:alt" content="AM 的标志、“新 · 版本 1.4”标签和文字：少些琐事挂在心上。">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"AM","url":"https://amatiempo.github.io/zh/","image":"https://amatiempo.github.io/og-1.4.png","description":"账单、到期日、生日和预约的提醒，像闹钟一样响起，还会告诉你要准备什么。免费、无广告，适用于安卓。","operatingSystem":"Android","applicationCategory":"ProductivityApplication","softwareVersion":"1.4","inLanguage":["es","en","pt-BR"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"AM 能提醒我什么？","acceptedAnswer":{"@type":"Answer","text":"生日、付款、预约、即将到期的证件、旅行、考试、用药，以及任何有日期的事：共有 29 个类别。没有日期的事会放进“以后再说”。"}},{"@type":"Question","name":"要花钱吗？","acceptedAnswer":{"@type":"Answer","text":"不要钱。AM 是免费的：没有订阅、没有广告，也没有应用内购买。"}},{"@type":"Question","name":"支持哪些设备？","acceptedAnswer":{"@type":"Answer","text":"在安卓上。目前还没有上架应用商店：我们正在和一小部分人测试，如果你想参加，请联系我们。计划登陆 Google Play 和 App Store；目前还不支持 iPhone。"}},{"@type":"Question","name":"它能像闹钟一样响吗？","acceptedAnswer":{"@type":"Answer","text":"可以，从 1.4 版开始。即使 AM 已关闭，它也会用手机的闹钟铃声一直响，直到你点“停止”，一分钟后会自动静音。你可以用在任何想用的提醒上，也可以全部切换为“仅闹钟”。"}},{"@type":"Question","name":"需要注册账号吗？","acceptedAnswer":{"@type":"Answer","text":"不需要。账号是可选的：用于在云端保留一份副本，并在多部手机上使用 AM。"}},{"@type":"Question","name":"我的提醒保存在哪里？","acceptedAnswer":{"@type":"Answer","text":"不登录时，保存在你的手机上。登录后，也会保存在 Firebase（Google），每个账号只能看到自己的内容。照片始终留在手机上。"}},{"@type":"Question","name":"没有网络能用吗？","acceptedAnswer":{"@type":"Answer","text":"可以：记录、查看清单和接收提醒都能离线使用。同步账号需要联网，语音输入视手机而定也可能需要联网。"}},{"@type":"Question","name":"如果提醒没有送达怎么办？","acceptedAnswer":{"@type":"Answer","text":"有些手机品牌会为了省电限制应用。“提醒状态”会检查可能阻止提醒的因素，用“和我一起设置”一步步引导你，并做一次完整测试。如果有问题阻止了提醒，首页会用红色卡片显示出来。"}},{"@type":"Question","name":"应用是什么语言？","acceptedAnswer":{"@type":"Answer","text":"西班牙语、英语和巴西葡萄牙语。你可以在欢迎流程或设置里选择，也可以跟随手机语言。你写的内容不会被翻译。"}},{"@type":"Question","name":"它会如何使用我的照片、通讯录和日历？","acceptedAnswer":{"@type":"Answer","text":"只有在你使用相关功能时才会用到。照片在手机上识别，日历绝不会被修改。"}},{"@type":"Question","name":"换手机后能恢复数据吗？","acceptedAnswer":{"@type":"Answer","text":"可以：登录账号，或导入备份（手动备份或每周自动备份）。照片不会随之迁移。"}},{"@type":"Question","name":"怎样删除我的账户？","acceptedAnswer":{"@type":"Answer","text":"在应用里：设置 › 账户 › 删除账户。如果你已经没有这个应用，删除账户页面会说明如何申请。"}},{"@type":"Question","name":"本页的演示会给我发提醒吗？","acceptedAnswer":{"@type":"Answer","text":"不会。演示不会安排提醒，也不保存任何内容：你输入的内容只留在浏览器里，刷新页面就会清除。只有在你想用语音输入时，才会请求使用麦克风。"}}]}</script>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/icono-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>
+    // Antes de pintar: el tema elegido y, en una página en español, la vuelta al idioma que la persona eligió antes.
+    // Cualquier cambio acá cambia su hash en la CSP: lo calcula solo scripts/paginas.ts.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('am.tema');
+        if (t === 'dark' || t === 'light') d.dataset.theme = t;
+        var i = localStorage.getItem('am.idioma');
+        if (d.lang === 'es-AR' && !d.hasAttribute('data-sin-vuelta') && /^(pt|it|en|zh|ru|de)$/.test(i)) location.replace('/' + i + location.pathname + location.search + location.hash);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="module" crossorigin src="/assets/comun-CxwP4vkL.js"></script>
+  <script type="module" crossorigin src="/assets/main-DhcxwDrw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/comun-BYvOwXht.css">
+</head>
+<body>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Íconos de Lucide (ISC). Trazo fino y redondeado, como los de la app. -->
+      <symbol id="i-regalo" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+      <symbol id="i-tarjeta" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+      <symbol id="i-turno" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+      <symbol id="i-documento" viewBox="0 0 24 24"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></symbol>
+      <symbol id="i-corazon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-personas" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-marcador" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+      <symbol id="i-lapiz" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></symbol>
+      <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-campana" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+      <symbol id="i-campana-sonando" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M22 8c0-2.3-.8-4.3-2-6"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/><path d="M4 2C2.8 3.7 2 5.7 2 8"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-mas" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+      <symbol id="i-casa" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+      <symbol id="i-calendario" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></symbol>
+      <symbol id="i-semana" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></symbol>
+      <symbol id="i-calendario-ok" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+      <symbol id="i-ajustes" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+      <symbol id="i-flecha" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-flecha-der" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+      <symbol id="i-repetir" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-escanear" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8h8"/><path d="M7 12h10"/><path d="M7 16h6"/></symbol>
+      <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-sube" viewBox="0 0 24 24"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></symbol>
+      <symbol id="i-microfono" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+      <symbol id="i-lista" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+      <symbol id="i-salir" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+      <symbol id="i-alarma" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></symbol>
+      <symbol id="i-botones" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-pausa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 15V9"/><path d="M14 15V9"/></symbol>
+      <symbol id="i-rayo" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+      <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+      <symbol id="i-paleta" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/></symbol>
+      <symbol id="i-candado" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-guion" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+      <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+      <symbol id="i-luna" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-buscar" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-idiomas" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+      <symbol id="i-capas" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+      <symbol id="i-etiqueta" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+      <symbol id="i-externo" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-correo" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-mensaje" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-brillo" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+      <symbol id="i-alerta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+      <symbol id="i-volumen" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+      <symbol id="i-historial" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+      <symbol id="i-engranaje" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-avion" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+      <symbol id="i-auto" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+      <symbol id="i-pastilla" viewBox="0 0 24 24"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></symbol>
+      <symbol id="i-bolsa" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="i-libro" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+      <symbol id="i-ubicacion" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <!-- Marcas de las tiendas (Simple Icons, CC0). Solo identifican dónde va a estar AM. -->
+      <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></symbol>
+      <!-- Banderas (dibujos simples, para el selector de idioma). -->
+      <symbol id="f-es" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#74ACDF"/><rect y="6.67" width="30" height="6.67" fill="#FFFFFF"/><circle cx="15" cy="10" r="2.3" fill="#F6B40E"/></symbol>
+      <symbol id="f-pt" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#009C3B"/><path d="M15 2.4 27.6 10 15 17.6 2.4 10z" fill="#FFDF00"/><circle cx="15" cy="10" r="4.3" fill="#002776"/></symbol>
+      <symbol id="f-it" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#FFFFFF"/><rect x="20" width="10" height="20" fill="#CE2B37"/></symbol>
+      <symbol id="f-en" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="corte-gb"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0 0 30" stroke="#FFFFFF" stroke-width="6" stroke-linecap="butt"/><path d="M0 0l60 30M60 0 0 30" clip-path="url(#corte-gb)" stroke="#C8102E" stroke-width="4" stroke-linecap="butt"/><path d="M30 0v30M0 15h60" stroke="#FFFFFF" stroke-width="10" stroke-linecap="butt"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6" stroke-linecap="butt"/></symbol>
+      <symbol id="f-zh" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#DE2910"/><path fill="#FFDE00" d="M5 2.6l.95 2.9h3.05l-2.47 1.8.94 2.9L5 8.4l-2.47 1.8.94-2.9L1 5.5h3.05z"/><circle cx="10" cy="2" r=".8" fill="#FFDE00"/><circle cx="12" cy="4" r=".8" fill="#FFDE00"/><circle cx="12" cy="7" r=".8" fill="#FFDE00"/><circle cx="10" cy="9" r=".8" fill="#FFDE00"/></symbol>
+      <symbol id="f-ru" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="20" fill="#FFFFFF"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/></symbol>
+      <symbol id="f-de" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice"><rect width="30" height="6.67" fill="#000000"/><rect y="6.67" width="30" height="6.67" fill="#DD0000"/><rect y="13.33" width="30" height="6.67" fill="#FFCE00"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="saltar" href="#contenido">跳到正文</a>
+  <div class="centinela" aria-hidden="true"></div>
+
+  <header class="barra" data-barra>
+    <nav class="contenedor barra-nav" aria-label="主导航">
+      <a class="barra-logo" href="./#inicio">
+        <picture>
+          <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="42px">
+          <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="42px">
+          <img src="/am-logo.png" alt="AM，返回首页" width="42" height="24">
+        </picture>
+      </a>
+      <ul class="barra-links">
+        <li><a href="./#novedades">新功能</a></li>
+        <li><a href="./#demo">演示</a></li>
+        <li><a href="./#privacidad">隐私</a></li>
+        <li><a href="./#preguntas">常见问题</a></li>
+      </ul>
+      <div class="barra-herramientas">
+        <div class="idioma">
+          <button type="button" class="control" popovertarget="menu-idioma" aria-haspopup="menu" aria-expanded="false" aria-label="语言: 中文" data-idioma-boton>
+            <span class="bandera" aria-hidden="true"><svg><use href="#f-zh"/></svg></span>
+            <span class="control-codigo">中文</span>
+            <svg class="control-flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+          </button>
+          <ul class="menu" id="menu-idioma" role="menu" popover aria-label="语言">
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/" hreflang="es" lang="es-AR" data-lang="es"><span class="bandera" aria-hidden="true"><svg><use href="#f-es"/></svg></span>Español</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/pt/" hreflang="pt" lang="pt-BR" data-lang="pt"><span class="bandera" aria-hidden="true"><svg><use href="#f-pt"/></svg></span>Português</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/it/" hreflang="it" lang="it" data-lang="it"><span class="bandera" aria-hidden="true"><svg><use href="#f-it"/></svg></span>Italiano</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/en/" hreflang="en" lang="en" data-lang="en"><span class="bandera" aria-hidden="true"><svg><use href="#f-en"/></svg></span>English</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="true" href="/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh"><span class="bandera" aria-hidden="true"><svg><use href="#f-zh"/></svg></span>中文</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/ru/" hreflang="ru" lang="ru" data-lang="ru"><span class="bandera" aria-hidden="true"><svg><use href="#f-ru"/></svg></span>Русский</a></li>
+          <li role="none"><a role="menuitemradio" aria-checked="false" href="/de/" hreflang="de" lang="de" data-lang="de"><span class="bandera" aria-hidden="true"><svg><use href="#f-de"/></svg></span>Deutsch</a></li>
+          </ul>
+        </div>
+        <button type="button" class="control control--icono" data-tema aria-label="切换到深色模式">
+          <svg class="icono-luna" aria-hidden="true"><use href="#i-luna"/></svg>
+          <svg class="icono-sol" aria-hidden="true"><use href="#i-sol"/></svg>
+        </button>
+        <a class="boton boton--primario boton--chico" href="./#empezar"><span class="cta-largo">我想试用 AM</span><span class="cta-corto">试用 AM</span></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="contenedor hero-texto">
+        <p class="hero-marca entrar"><a class="pastilla" href="#novedades">新 · 版本 1.4</a><span>AM · 提醒</span></p>
+        <h1 class="hero-titulo" id="hero-titulo">少些琐事<br> <span class='azul'>挂在心上<span class='punto'>。</span></span></h1>
+        <p class="hero-bajada entrar">记住重要的事，准备好接下来的事，并确保提醒真的送达。付款、生日、预约和到期日，免费且无广告。</p>
+        <div class="hero-acciones entrar">
+          <a class="boton boton--primario boton--grande" href="#empezar">我想试用 AM</a>
+          <a class="enlace-flecha" href="#demo"><span>试试演示</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        </div>
+        <p class="aviso-idioma entrar">AM 应用提供西班牙语、英语和葡萄牙语版本。</p>
+      </div>
+
+      <figure class="hero-visual" data-hero-visual>
+        <div class="recorte">
+          <div class="telefono" role="img" aria-label="AM 首页示意图（英文界面）：带你名字的问候、今天要做的事、本月付款、你的一周、今天要付网费，以及要给妈妈买的礼物。">
+            <div class="pantalla" aria-hidden="true" lang="en" data-lang-app>
+              <div class="app-cab">
+                <picture>
+                  <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="35px">
+                  <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="35px">
+                  <img src="/am-logo.png" alt="" width="35" height="20" decoding="async">
+                </picture>
+                <span class="app-botones"><span class="app-buscar"><svg><use href="#i-buscar"/></svg></span><span class="app-mas"><svg><use href="#i-mas"/></svg></span></span>
+              </div>
+              <p class="app-fecha" data-hoy>Today</p>
+              <p class="app-saludo"><span data-saludo>Good morning</span>, Juli</p>
+              <p class="app-resumen">1 to sort out · 1 to prepare</p>
+              <p class="app-pagos"><span data-mes-pagos>This month’s payments:</span> <b>$45,300</b> to pay · <span class='app-ver'>See ›</span></p>
+              <div class="app-semana">
+                <svg><use href="#i-semana"/></svg>
+                <span><b>Your week</b><span>3 things · 1 birthday · 2 payments ($25,500)</span></span>
+                <svg class="app-chevron"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="app-seccion">To sort out</p>
+              <ul class="app-lista">
+                <li class="nota nota--a">
+                  <span class="app-check"></span>
+                  <span class="nota-cuerpo">
+                    <span class="nota-titulo">Pay the internet bill</span>
+                    <span class="nota-meta"><svg><use href="#i-tarjeta"/></svg><span>Due today · Payment</span></span>
+                  </span>
+                </li>
+              </ul>
+              <p class="app-seccion">Get ready today</p>
+              <ul class="app-lista">
+                <li class="nota nota--b">
+                  <span class="app-check app-check--paso"></span>
+                  <span class="nota-cuerpo">
+                    <span class="nota-titulo">Buy a gift</span>
+                    <span class="nota-meta"><svg><use href="#i-lista"/></svg><span>Mom’s birthday · 5 days left</span></span>
+                  </span>
+                </li>
+              </ul>
+              <div class="app-pestanas">
+                <span class="activa"><svg><use href="#i-casa"/></svg><span>Home</span></span>
+                <span><svg><use href="#i-calendario"/></svg><span>Calendar</span></span>
+                <span><svg><use href="#i-capas"/></svg><span>Spaces</span></span>
+                <span><svg><use href="#i-engranaje"/></svg><span>Settings</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="chip chip--1" aria-hidden="true"><span class="chip-icono"><svg><use href="#i-alarma"/></svg></span><span>真正的闹钟</span></div>
+          <div class="chip chip--2" aria-hidden="true"><span class="chip-icono chip-icono--ok"><svg><use href="#i-check"/></svg></span><span>提醒已全部就绪</span></div>
+          <div class="chip chip--3" aria-hidden="true"><span class="chip-icono"><svg><use href="#i-salir"/></svg></span><span>现在出发 · 10:05</span></div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="seccion seccion--blanca preparar" id="producto" aria-labelledby="preparar-titulo">
+      <div class="contenedor preparar-grid" id="preparar">
+        <div class="preparar-texto revelar">
+          <p class="ceja">提前准备</p>
+          <h2 class="titulo-seccion" id="preparar-titulo">不只是记得。<br> 更要准备好。</h2>
+          <p class="bajada">生日从祝福之前就开始了。预约，从出门之前就开始了。AM 帮你记住这些步骤。</p>
+          <p class="preparar-nota">对于重复发生的事，每一次都会重新开始准备。</p>
+        </div>
+
+        <fieldset class="ejemplos revelar d1">
+          <legend class="solo-lector">选择一个示例</legend>
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-cumple" checked>
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-turno">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-pago">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-documento">
+          <input class="solo-lector" type="radio" name="ejemplo" id="ej-medico">
+          <div class="selector">
+            <label for="ej-cumple">生日</label>
+            <label for="ej-turno">预约</label>
+            <label for="ej-pago">缴费</label>
+            <label for="ej-documento">证件</label>
+            <label for="ej-medico">看医生</label>
+          </div>
+
+          <div class="ejemplos-marco">
+            <div class="linea" data-ejemplo="cumple" role="img" aria-label="妈妈的生日，有两项准备。提前一周：买礼物，已完成。提前一天：准备要带的东西。当天：生日。">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-regalo"/></svg>
+                <div><b>妈妈的生日</b><span>每年 · 已完成 1/2 项准备</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito hito--listo"><span class="hito-marca"><svg><use href="#i-check"/></svg></span><span class="hito-cuando">提前一周</span><span class="hito-titulo">买礼物</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前一天</span><span class="hito-titulo">准备要带的东西</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">当天</span><span class="hito-titulo">妈妈的生日</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="turno" role="img" aria-label="10:30 的牙医预约，有两项准备。提前一天：准备证件和检查报告。提前一小时：预留时间出门。当天：预约。">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-turno"/></svg>
+                <div><b>牙医预约</b><span>10:30 · 已完成 0/2 项准备</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前一天</span><span class="hito-titulo">准备证件和检查报告</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前一小时</span><span class="hito-titulo">预留时间出门</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">当天 10:30</span><span class="hito-titulo">牙医预约</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="pago" role="img" aria-label="每月 10 日还信用卡，有一项准备。提前三天：核对金额和支付方式。当天：还款。">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-tarjeta"/></svg>
+                <div><b>还信用卡</b><span>每月 10 日 · 1 项准备待完成</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前三天</span><span class="hito-titulo">核对金额和支付方式</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">当天</span><span class="hito-titulo">还信用卡</span></li>
+              </ol>
+            </div>
+            <div class="linea" data-ejemplo="documento" role="img" aria-label="身份证将于 1 月 15 日到期。提前两个月、一个月和一周提醒，到期当天也会提醒。续办需要：现有身份证和在线预约。">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-documento"/></svg>
+                <div><b>身份证到期</b><span>1 月 15 日 · 证件</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前两个月</span><span class="hito-titulo">提醒</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前一个月</span><span class="hito-titulo">提醒</span></li>
+                <li class="hito"><span class="hito-marca"></span><span class="hito-cuando">提前一周</span><span class="hito-titulo">提醒</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">当天</span><span class="hito-titulo">身份证到期</span></li>
+              </ol>
+              <div class="linea-lista" aria-hidden="true">
+                <p>续办需要</p>
+                <ul><li><span class="mini-check"></span><span>现有身份证</span></li><li><span class="mini-check"></span><span>在线预约</span></li></ul>
+              </div>
+            </div>
+            <div class="linea" data-ejemplo="medico" role="img" aria-label="10:30 在诊所看医生，路程 25 分钟。10:05：现在出发，10:30 能到。要带：充电器、证件和检查报告；证件已勾选，充电器上次没有勾选。">
+              <div class="linea-cab" aria-hidden="true">
+                <svg><use href="#i-turno"/></svg>
+                <div><b>看医生</b><span>10:30 · 诊所（25 分钟）</span></div>
+              </div>
+              <ol class="linea-hitos" aria-hidden="true">
+                <li class="hito hito--salir"><span class="hito-marca"><svg><use href="#i-salir"/></svg></span><span class="hito-cuando">10:05</span><span class="hito-titulo">现在出发，10:30 能到</span></li>
+                <li class="hito hito--evento"><span class="hito-marca"></span><span class="hito-cuando">10:30</span><span class="hito-titulo">看医生</span></li>
+              </ol>
+              <div class="linea-lista" aria-hidden="true">
+                <p>要带的东西 · 已勾选 1/3</p>
+                <ul>
+                  <li><span class="mini-check"></span><span>充电器</span> <small>（上次没有勾选）</small></li>
+                  <li class="tildado"><span class="mini-check"><svg><use href="#i-check"/></svg></span><span>证件</span></li>
+                  <li><span class="mini-check"></span><span>检查报告</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="seccion novedades" id="novedades" aria-labelledby="novedades-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja ceja--naranja">新功能</p>
+          <h2 class="titulo-seccion titulo-seccion--xl" id="novedades-titulo">版本 1.4<br> <span class='azul'>的新功能<span class='punto'>。</span></span></h2>
+          <p class="bajada">真正的闹钟、三种提醒方式、三种语言，以及一个帮你设置好一切的欢迎流程。连同 1.3 版的十项改进，共十五项更新。</p>
+        </div>
+
+        <ul class="destacados">
+          <li class="destacado destacado--grande revelar">
+            <span class="etiqueta-destacado">重点</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-alarma"/></svg></span>
+            <h3>真正的闹钟</h3>
+            <p>用手机的闹钟铃声一直响，直到你点“停止”，即使 AM 已关闭、屏幕已熄灭。如果你没有处理，一分钟后会静音，并保持未完成。“稍后提醒”会在 10 分钟后再响，无需打开应用。</p>
+            <p class="ejemplo"><span class="ejemplo-alarma" aria-hidden="true"><svg><use href="#i-alarma"/></svg></span><span><span class='solo-lector'>示例：</span><b>还信用卡</b> <span>正在响 · 停止 · 稍后提醒</span></span></p>
+          </li>
+          <li class="destacado destacado--grande revelar d1">
+            <span class="etiqueta-destacado">重点</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-ajustes"/></svg></span>
+            <h3>由你决定怎么提醒</h3>
+            <p>经典：每条提醒按你为它选的方式。仅通知。或仅闹钟，确保什么都不会错过：开启前，AM 会告诉你未来 7 天会响多少次闹钟。</p>
+            <div class="ejemplo ejemplo--columna">
+              <span class="segmentado" aria-hidden="true"><span>经典</span><span>通知</span><span class="activo">闹钟</span></span>
+              <span><span class='solo-lector'>示例：</span>选择“仅闹钟”后，未来 7 天<b>会响 4 次闹钟</b>。</span>
+            </div>
+          </li>
+          <li class="destacado revelar">
+            <span class="etiqueta-destacado">重点</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-idiomas"/></svg></span>
+            <h3>说你的语言</h3>
+            <p>西班牙语、英语或巴西葡萄牙语，也可以跟随手机语言。而且这三种语言里你写的或说的，它都能理解。</p>
+            <p class="ejemplo ejemplo--frases"><span class="solo-lector">例如，下面三句话它理解的是同一个意思：</span><span lang="es">Mañana a las 9</span><span lang="en">Tomorrow at 9</span><span lang="pt-BR">Amanhã às 9</span></p>
+          </li>
+          <li class="destacado revelar d1">
+            <span class="etiqueta-destacado">重点</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-brillo"/></svg></span>
+            <h3>帮你设置好一切的欢迎流程</h3>
+            <p>七个简短步骤：你的名字、希望怎样被提醒、需要的权限（配合“和我一起设置”）、你的联系人和日历（可选），以及外观。如果中途关闭，下次会从原处继续。还有一个六步导览，教你如何使用。</p>
+            <div class="ejemplo ejemplo--columna"><span class="progreso" aria-hidden="true"><i></i></span><span>第 3 步，共 7 步 · 设置提醒</span></div>
+          </li>
+          <li class="destacado revelar d2">
+            <span class="etiqueta-destacado">重点</span>
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escudo"/></svg></span>
+            <h3>出了问题，它会告诉你</h3>
+            <p>如果有问题阻止了提醒，首页会用红色卡片显示，并帮你解决。“测试闹钟”会真的响起，并问你是否听到了：AM 不会把无法确认的事当成理所当然。</p>
+            <p class="ejemplo ejemplo--alerta"><span class="ejemplo-alerta" aria-hidden="true"><svg><use href="#i-alerta"/></svg></span><span><span class='solo-lector'>示例：</span><b>闹钟无法响起</b> <span>立即设置</span></span></p>
+          </li>
+        </ul>
+
+        <h3 class="novedades-subtitulo revelar">以及 1.3 版的全部内容</h3>
+        <ul class="novedades-lista">
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-capas"/></svg></span><div><h4>空间</h4><p>新的标签页汇集了人物、付款、证件和地点，每项都显示状态：“3 个生日 · 下一个在 10 月 10 日周六”。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-etiqueta"/></svg></span><div><h4>29 个类别，可搜索</h4><p>旅行、考试、宠物、车辆、用药等等。搜“账单”会出现付款；搜“航班”，出现旅行。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lista"/></svg></span><div><h4>做好准备的点子</h4><p>根据场合，AM 最多建议三个步骤，比如买礼物或核对预订。只有你点了才会加入。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-marcador"/></svg></span><div><h4>保存的准备步骤</h4><p>保存某个场合的步骤，一键再次使用，已有的不会重复。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-reloj"/></svg></span><div><h4>精确的时间</h4><p>输入 07:17 就是 07:17。没有表盘，也不四舍五入。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-calendario"/></svg></span><div><h4>修改日期之前</h4><p>保存前就能看到每个准备步骤会怎样移动，之后还能撤销。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lapiz"/></svg></span><div><h4>草稿不会丢</h4><p>如果写到一半关掉应用，你写的内容会等着你。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-volumen"/></svg></span><div><h4>声音和振动</h4><p>每类提醒都显示它在安卓里的状态，并有一个测试按钮。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-engranaje"/></svg></span><div><h4>更清晰的设置</h4><p>按分组整理，每一项的状态一目了然。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-personas"/></svg></span><div><h4>联系人和日历已修复</h4><p>现在能正确读取联系人的生日和日历中的活动，而且只用只读权限。</p></div></li>
+        </ul>
+
+        <div class="novedades-acciones revelar">
+          <a class="boton boton--primario boton--grande" href="#empezar">我想试用 AM</a>
+          <a class="enlace-flecha" href="novedades.html"><span>查看所有版本</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca funciones" id="funciones" aria-labelledby="funciones-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja">它能做的一切</p>
+          <h2 class="titulo-seccion" id="funciones-titulo">熟悉的功能<br> 都还在。</h2>
+          <p class="bajada">新功能是在这些基础上增加的，原有的一切照旧。</p>
+        </div>
+
+        <ul class="destacados">
+          <li class="destacado destacado--grande revelar">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escanear"/></svg></span>
+            <h3>拍照 → 提醒</h3>
+            <p>给账单、打印的预约单或证件拍张照，AM 就能读出标题、日期、时间和金额。照片在手机上识别：由你检查后保存。</p>
+            <p class="ejemplo"><span class="ejemplo-miniatura" aria-hidden="true"><svg><use href="#i-escanear"/></svg></span><span><span class='solo-lector'>示例：</span><b>缴纳 Edesur S.A. 电费</b> <span>10 月 15 日到期 · $ 25.300,50 · 附照片作为凭证</span></span></p>
+          </li>
+          <li class="destacado destacado--grande revelar d1">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-escudo"/></svg></span>
+            <h3>提醒状态</h3>
+            <p>检查手机上所有可能阻止提醒的设置（权限、已关闭的类别、省电模式、暂停），并引导你修复。它会做一次端到端测试，并告诉你最后一条提醒是什么时候送达的。</p>
+            <p class="ejemplo"><span class="ejemplo-ok" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span><span class='solo-lector'>示例：</span><b>提醒已全部就绪</b> <span>权限 · 类别 · 电池 · 未暂停</span></span></p>
+          </li>
+          <li class="destacado revelar">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-sube"/></svg></span>
+            <h3>认真记账</h3>
+            <p>每次实际付了多少，即使金额有变化也能记住。每项服务的走势、未来 3 个月的预估、「复制 alias / CBU」以及照片凭证。</p>
+            <p class="ejemplo"><span class="barras" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span><span class='solo-lector'>示例：</span><b>电费自 8 月以来上涨了 18%</b></span></p>
+          </li>
+          <li class="destacado revelar d1">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-regalo"/></svg></span>
+            <h3>人与礼物</h3>
+            <p>为每个生日或纪念日，全年随时记下礼物点子和送过的礼物。还可以从通讯录导入生日。</p>
+            <p class="ejemplo"><span><span class='solo-lector'>提醒示例：</span><b>Ana 的生日 · 明天</b> <span>点子：书 · 去年：香水（$ 18.000）</span></span></p>
+          </li>
+          <li class="destacado revelar d2">
+            <span class="novedad-icono" aria-hidden="true"><svg><use href="#i-documento"/></svg></span>
+            <h3>证件和到期日</h3>
+            <p>身份证、护照、驾照、车检、保险或保修，提前 2 个月、1 个月和 1 周提醒，附「续办需要」清单，证件照片随时可查。</p>
+            <p class="ejemplo"><span><span class='solo-lector'>示例：</span><b>驾驶证</b> <span class='naranja-texto'>21 天后到期 · 10 月 20 日周二</span></span></p>
+          </li>
+        </ul>
+
+        <ul class="novedades-lista novedades-lista--funciones">
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-microfono"/></svg></span><div><h4>语音输入</h4><p>点一下麦克风，说「明天 10 点看牙医」（需用西班牙语）。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-lista"/></svg></span><div><h4>随身清单</h4><p>每次都能逐项勾选，还能保存重复使用：旅行、看医生、健身。并会标出上次没勾选的东西。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-salir"/></svg></span><div><h4>「现在出发」</h4><p>保存你到每个地点需要多久，AM 会提醒你何时出发，并提供「如何前往」。不使用你的位置。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-semana"/></svg></span><div><h4>你的一周</h4><p>每周一条提醒，汇总即将到来的事（事项、缴费、生日和要准备的东西），并预览下个月。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-calendario-ok"/></svg></span><div><h4>日历中的活动</h4><p>从你的日历（包括 Google 日历）导入预约和会议，并建议要准备什么。只读：绝不修改你的日历。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-campana-sonando"/></svg></span><div><h4>「我必须处理」</h4><p>每 15 分钟、1 小时或 3 小时提醒一次，尊重你的休息时间，每天最多提醒 3 次。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-reloj"/></svg></span><div><h4>多次提前提醒</h4><p>提前 10 分钟、1 小时、1 天、1 周、1 个月或 2 个月。推迟提醒也不会改变到期日。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-botones"/></svg></span><div><h4>提醒中的按钮</h4><p>「完成」「10 分钟」和「1 小时」无需打开应用就能使用。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-pausa"/></svg></span><div><h4>暂停提醒</h4><p>适合休假：回来时会收到汇总。还有每日摘要，每个类别也可以设置不同的提示音。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-repetir"/></svg></span><div><h4>贴近生活的重复规则</h4><p>每 2 周；周一、周三和周五；每月第二个周二；最后一个周五；最后一个工作日；或「完成后 3 个月再重复」。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-rayo"/></svg></span><div><h4>随手记录</h4><p>通知栏中的常驻按钮、图标快捷方式（新建 · 稍后 · 从照片）、从其他应用分享，以及「今天」小组件。</p></div></li>
+          <li class="novedad revelar d2"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-telefono"/></svg></span><div><h4>快捷操作</h4><p>拨打电话、打开付款页面、查看地址、WhatsApp，以及分享提醒。</p></div></li>
+          <li class="novedad revelar"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-paleta"/></svg></span><div><h4>随你喜欢</h4><p>用你的名字问候你。6 种颜色，暖色或中性背景，浅色、深色或自动模式，每周从周一或周日开始。</p></div></li>
+          <li class="novedad revelar d1"><span class="novedad-icono novedad-icono--chico" aria-hidden="true"><svg><use href="#i-candado"/></svg></span><div><h4>数据安全</h4><p>可选账号与同步、带预览和「撤销」的备份、每周自动备份、用指纹或 PIN 解锁 AM，处处都能「撤销」。</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion demo" id="demo" aria-labelledby="demo-titulo" data-demo>
+      <div class="contenedor demo-grid">
+        <div class="demo-texto revelar">
+          <p class="ceja">试一试</p>
+          <h2 class="titulo-seccion" id="demo-titulo">把一件事从脑子里拿出来。</h2>
+          <p class="bajada">写下来或说出来，就像平时说话一样。</p>
+        </div>
+
+        <div class="demo-panel">
+          <form class="demo-form" data-form method="dialog" novalidate>
+            <fieldset class="demo-campos" data-campos disabled>
+              <label class="demo-etiqueta" for="demo-campo">你想记住什么？</label>
+              <div class="demo-fila-campo">
+                <div class="demo-campo-caja">
+                  <input class="demo-campo" id="demo-campo" data-campo type="text" placeholder="Tomorrow 9:30 dentist" lang="en" data-lang-app maxlength="120"
+                    autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="done" aria-describedby="demo-entiende demo-error demo-aclaracion">
+                  <!-- Dictado: el código lo muestra solo si el navegador sabe convertir voz en texto. -->
+                  <button type="button" class="boton-voz" data-dictar aria-pressed="false" aria-label="语音输入" hidden><svg aria-hidden="true"><use href="#i-microfono"/></svg></button>
+                </div>
+                <button type="submit" class="boton boton--primario">创建提醒</button>
+              </div>
+              <p class="demo-voz" data-voz hidden></p>
+              <p class="demo-entiende" id="demo-entiende" data-entiende></p>
+              <p class="demo-error" id="demo-error" data-error></p>
+              <div class="sugerencias">
+                <span class="sugerencias-titulo" id="sugerencias-titulo">试试</span>
+                <div class="sugerencias-lista" role="group" aria-labelledby="sugerencias-titulo" lang="en" data-lang-app>
+                  <button type="button" class="sugerencia" data-sugerencia>Tomorrow 9:30 dentist</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Pay the credit card on the 10th of every month</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Ana’s birthday November 14</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Passport expires January 15</button>
+                  <button type="button" class="sugerencia" data-sugerencia>Flight to Chicago Friday 7 am</button>
+                </div>
+              </div>
+              <p class="aclaracion" id="demo-aclaracion"><svg aria-hidden="true"><use href="#i-info"/></svg><span><span>这是演示，不会安排任何提醒。</span> <span>应用提供西班牙语、英语和葡萄牙语版本；这个演示使用英语。</span></span></p>
+            </fieldset>
+          </form>
+
+          <p class="demo-vacio" data-vacio>演示需要 JavaScript。如果你输入 “Tomorrow 9:30 dentist”，AM 会把它记为明天上午 9:30 的预约。</p>
+          <div class="demo-resultado" data-resultado hidden>
+            <div class="demo-cab">
+              <h3 class="demo-cab-titulo">你的清单</h3>
+              <button type="button" class="boton-texto" data-reiniciar>重置演示</button>
+            </div>
+            <ul class="demo-lista" data-lista aria-label="测试提醒"></ul>
+            <p class="demo-tope" data-tope hidden>演示只显示最近 4 条。应用里没有数量限制。</p>
+            <div class="demo-aviso" data-aviso hidden>
+              <p data-aviso-texto></p>
+              <button type="button" data-deshacer>撤销</button>
+            </div>
+          </div>
+          <p class="solo-lector" role="status" data-anuncio></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca pasos" id="como-funciona" aria-labelledby="pasos-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <p class="ceja">使用方法</p>
+          <h2 class="titulo-seccion" id="pasos-titulo">三个步骤。<br> 然后继续你的一天。</h2>
+        </div>
+        <ol class="pasos-lista">
+          <li class="paso revelar">
+            <span class="paso-numero" aria-hidden="true">1</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-lapiz"/></svg></span>
+            <h3 class="paso-titulo">记下来</h3><p>打字、语音或拍照都行。</p>
+          </li>
+          <li class="paso revelar d1">
+            <span class="paso-numero" aria-hidden="true">2</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-lista"/></svg></span>
+            <h3 class="paso-titulo">AM 帮你准备</h3><p>要准备什么、带什么、何时出发、付多少钱。</p>
+          </li>
+          <li class="paso revelar d2">
+            <span class="paso-numero" aria-hidden="true">3</span>
+            <span class="paso-icono" aria-hidden="true"><svg><use href="#i-campana"/></svg></span>
+            <h3 class="paso-titulo">准时提醒你</h3><p>用通知或闹钟提醒。直接在提醒里完成或稍后提醒。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion comparar" id="comparar" aria-labelledby="comparar-titulo">
+      <div class="contenedor comparar-grid">
+        <div class="revelar">
+          <p class="ceja">对比</p>
+          <h2 class="titulo-seccion" id="comparar-titulo">不只是<br> 一本日程表。</h2>
+          <p class="bajada">两者都能准时提醒。其余的，只有 AM 做得到。</p>
+        </div>
+        <div class="tabla-marco revelar d1">
+          <table class="tabla">
+            <caption class="solo-lector">普通日程表和 AM 各能做什么</caption>
+            <thead>
+              <tr><th scope="col"><span class="solo-lector">功能</span></th><th scope="col">普通日程表</th><th scope="col">AM</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">准时提醒</th><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">像闹钟一样响，直到你关掉</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">告诉你要准备什么、何时准备</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">持续提醒，但夜间不打扰</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">推迟也不会错过到期日</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">已付和待付的金额</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">礼物点子和送过的礼物</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">证件提前 60、30 和 7 天提醒</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">提醒何时出发，但不追踪你</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">检查提醒能否送达</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+              <tr><th scope="row">拍照 → 提醒</th><td class="no"><svg aria-hidden="true"><use href="#i-guion"/></svg><span>否</span></td><td class="si"><svg aria-hidden="true"><use href="#i-check"/></svg><span>是</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca privacidad" id="privacidad" aria-labelledby="privacidad-titulo">
+      <div class="contenedor">
+        <div class="cabecera-centrada revelar">
+          <span class="privacidad-icono" aria-hidden="true"><svg><use href="#i-candado"/></svg></span>
+          <h2 class="titulo-seccion" id="privacidad-titulo">你的东西，只属于你。</h2>
+          <p class="bajada">不登录账号时，提醒保存在你的手机上。登录账号后，提醒会通过 Firebase（Google）同步，并且只有你能看到。照片从不离开手机，并在手机上识别。只有在你使用相关功能时才会读取日历和通讯录，AM 从不修改它们。</p>
+        </div>
+        <ul class="garantias revelar d1">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>账号可选</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>不登录，一切都在手机上</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>免费，无需订阅</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>无广告，不定位</span></li>
+        </ul>
+        <p class="privacidad-nota revelar d2">你在演示里输入的内容只在浏览器中处理，不会发送到任何服务器。如果你用语音输入，浏览器会把声音转成文字，可能会在其公司（Google、Microsoft 或 Apple）的服务器上完成。没有追踪 Cookie，也没有数据分析。<a href='privacidad.html'>了解更多隐私信息</a></p>
+      </div>
+    </section>
+
+    <section class="seccion preguntas" id="preguntas" aria-labelledby="preguntas-titulo">
+      <div class="contenedor preguntas-grid">
+        <div class="revelar">
+          <p class="ceja">常见问题</p>
+          <h2 class="titulo-seccion" id="preguntas-titulo">大家常问的问题。</h2>
+        </div>
+        <div class="faq revelar d1">
+          <details><summary><span>AM 能提醒我什么？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>生日、付款、预约、即将到期的证件、旅行、考试、用药，以及任何有日期的事：共有 29 个类别。没有日期的事会放进“以后再说”。</p></div></details>
+          <details><summary><span>要花钱吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>不要钱。AM 是免费的：没有订阅、没有广告，也没有应用内购买。</p></div></details>
+          <details><summary><span>支持哪些设备？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>在安卓上。目前还没有上架应用商店：我们正在和一小部分人测试，如果你想参加，请联系我们。计划登陆 Google Play 和 App Store；目前还不支持 iPhone。</p></div></details>
+          <details><summary><span>它能像闹钟一样响吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>可以，从 1.4 版开始。即使 AM 已关闭，它也会用手机的闹钟铃声一直响，直到你点“停止”，一分钟后会自动静音。你可以用在任何想用的提醒上，也可以全部切换为“仅闹钟”。</p></div></details>
+          <details><summary><span>需要注册账号吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>不需要。账号是可选的：用于在云端保留一份副本，并在多部手机上使用 AM。</p></div></details>
+          <details><summary><span>我的提醒保存在哪里？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>不登录时，保存在你的手机上。登录后，也会保存在 Firebase（Google），每个账号只能看到自己的内容。照片始终留在手机上。</p></div></details>
+          <details><summary><span>没有网络能用吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>可以：记录、查看清单和接收提醒都能离线使用。同步账号需要联网，语音输入视手机而定也可能需要联网。</p></div></details>
+          <details><summary><span>如果提醒没有送达怎么办？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>有些手机品牌会为了省电限制应用。“提醒状态”会检查可能阻止提醒的因素，用“和我一起设置”一步步引导你，并做一次完整测试。如果有问题阻止了提醒，首页会用红色卡片显示出来。</p></div></details>
+          <details><summary><span>应用是什么语言？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>西班牙语、英语和巴西葡萄牙语。你可以在欢迎流程或设置里选择，也可以跟随手机语言。你写的内容不会被翻译。</p></div></details>
+          <details><summary><span>它会如何使用我的照片、通讯录和日历？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>只有在你使用相关功能时才会用到。照片在手机上识别，日历绝不会被修改。</p></div></details>
+          <details><summary><span>换手机后能恢复数据吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>可以：登录账号，或导入备份（手动备份或每周自动备份）。照片不会随之迁移。</p></div></details>
+          <details><summary><span>怎样删除我的账户？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>在应用里：设置 › 账户 › 删除账户。如果你已经没有这个应用，<a href='eliminar-cuenta.html'>删除账户</a>页面会说明如何申请。</p></div></details>
+          <details><summary><span>本页的演示会给我发提醒吗？</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></summary><div class="respuesta"><p>不会。演示不会安排提醒，也不保存任何内容：你输入的内容只留在浏览器里，刷新页面就会清除。只有在你想用语音输入时，才会请求使用麦克风。</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cierre" id="empezar" aria-labelledby="cierre-titulo">
+      <div class="contenedor cierre-contenido">
+        <h2 class="cierre-titulo revelar" id="cierre-titulo">交给 AM。<br> <span class='claro'>继续你的一天<span class='punto'>。</span></span></h2>
+        <p class="cierre-estado revelar d1"><strong>我们正在准备上线。</strong>在此期间，我们正和一小部分人在安卓上测试。计划登陆 <span class="marca-tienda"><svg aria-hidden="true"><use href="#i-play"/></svg>Google Play</span> 和 <span class="marca-tienda"><svg aria-hidden="true"><use href="#i-apple"/></svg>App Store</span>。</p>
+        <div class="cierre-botones revelar d2">
+          <a class="boton boton--blanco boton--grande" href="https://ig.me/m/amatiempo" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-mensaje"/></svg><span>我想试用 AM</span><span class="solo-lector">（在新标签页中打开）</span><svg class="externo" aria-hidden="true"><use href="#i-externo"/></svg></a>
+          <a class="boton boton--borde boton--grande" href="mailto:amapp.contacto@gmail.com?subject=AM"><svg aria-hidden="true"><use href="#i-correo"/></svg><span>发邮件给我们</span></a>
+          <a class="enlace-flecha enlace-flecha--claro" href="https://www.instagram.com/amatiempo/" target="_blank" rel="noopener"><svg class="enlace-icono" aria-hidden="true"><use href="#i-instagram"/></svg><span>关注发布动态</span><span class="solo-lector">（在新标签页中打开）</span><svg aria-hidden="true"><use href="#i-externo"/></svg></a>
+        </div>
+        <p class="cierre-ig revelar d3">在 Instagram 上私信 @amatiempo 或发邮件到 amapp.contacto@gmail.com，我们会告诉你如何参加测试。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-grid">
+      <div class="pie-marca">
+        <picture>
+          <source type="image/avif" srcset="/am-logo-56.avif 56w, /am-logo-112.avif 112w, /am-logo-168.avif 168w" sizes="56px">
+          <source type="image/webp" srcset="/am-logo-56.webp 56w, /am-logo-112.webp 112w, /am-logo-168.webp 168w" sizes="56px">
+          <img src="/am-logo.png" alt="AM" width="56" height="32" loading="lazy" decoding="async">
+        </picture>
+        <p>重要的事，准备好，准时到。</p>
+      </div>
+      <nav aria-label="页脚">
+        <ul class="pie-links">
+          <li><a href="novedades.html">新功能</a></li>
+          <li><a href="./#demo">试用演示</a></li>
+          <li><a href="./#preguntas">常见问题</a></li>
+          <li><a href="privacidad.html">隐私</a></li>
+          <li><a href="terminos.html">条款</a></li>
+          <li><a href="eliminar-cuenta.html">删除账户</a></li>
+          <li><a href="https://www.instagram.com/amatiempo/" target="_blank" rel="noopener">Instagram<svg class="externo" aria-hidden="true"><use href="#i-externo"/></svg><span class="solo-lector">（在新标签页中打开）</span></a></li>
+          <li><a href="mailto:amapp.contacto@gmail.com">amapp.contacto@gmail.com</a></li>
+        </ul>
+      </nav>
+      <p class="pie-legal"><span>在阿根廷独立开发。</span> <span class="sin-corte">© 2026 AM</span></p>
+    </div>
+  </footer>
+
+<script type="application/json" id="textos">{"ui.temaOscuro":"切换到深色模式","ui.temaClaro":"切换到浅色模式","demo.vacio":"你记下的内容会显示在这里。","demo.seAnota":"将记为","demo.completar":"完成","demo.marcarPendiente":"标记为未完成","demo.completado":"已完成","demo.anotado":"已记下。","demo.anotadoAnuncio":"已记下：","demo.menos":"脑子里少了一件事。","demo.pendiente":"已恢复为未完成。","demo.deshecho":"已撤销。","demo.vaciada":"演示已清空。","demo.error":"写下要提醒的事，例如 “Tomorrow 9:30 dentist”。","demo.fechaRara":"我没看懂日期“{fecha}”。先放进以后再说。","demo.fechaRaraRevisar":"我没看懂日期“{fecha}”。请检查日期。","demo.escuchando":"正在听……请用英语说。","demo.sinVoz":"没有听到声音。请点麦克风再试一次。","demo.micBloqueado":"浏览器没有使用麦克风的权限。请在网站设置中允许后再试。","demo.vozDesactivada":"此设备或浏览器已关闭语音输入。","demo.sinMic":"没有找到麦克风。","demo.vozSinRed":"语音输入需要浏览器连接互联网。","demo.vozFallo":"此浏览器无法把你的声音转成文字。请试试 Chrome、Edge 或 Safari，或者直接输入。","demo.vozNoDisponible":"想试试语音输入，请用 Chrome、Edge 或 Safari 打开此页面。"}</script>
+</body>
+</html>
